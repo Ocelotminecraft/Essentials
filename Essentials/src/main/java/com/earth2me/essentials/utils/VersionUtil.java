@@ -61,9 +61,9 @@ public final class VersionUtil {
         // KibblePatcher - Dangerous bytecode editor snakeoil whose only use is to break plugins
         builder.put("net.kibblelands.server.FastMath", SupportStatus.DANGEROUS_FORK);
 
-        // Brain-dead chat signing bypass that break EssentialsChat
-        builder.put("ml.tcoded.nochatreports.NoChatReportsSpigot", SupportStatus.STUPID_PLUGIN);
-        builder.put("me.doclic.noencryption.NoEncryption", SupportStatus.STUPID_PLUGIN);
+        // Chat signing bypass that can potentially break EssentialsChat
+        builder.put("ml.tcoded.nochatreports.NoChatReportsSpigot", SupportStatus.CHAT_PLUGIN);
+        builder.put("me.doclic.noencryption.NoEncryption", SupportStatus.CHAT_PLUGIN);
 
         // Akarin - Dangerous patch history;
         //   * Potentially unsafe saving of nms.JsonList
@@ -328,7 +328,7 @@ public final class VersionUtil {
         FULL(true),
         LIMITED(true),
         DANGEROUS_FORK(false),
-        STUPID_PLUGIN(false),
+        CHAT_PLUGIN(false),
         NMS_CLEANROOM(false),
         UNSTABLE(false),
         OUTDATED(false)
