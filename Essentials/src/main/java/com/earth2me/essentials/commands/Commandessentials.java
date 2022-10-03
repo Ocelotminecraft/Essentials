@@ -103,7 +103,7 @@ public class Commandessentials extends EssentialsCommand {
         "GroupManager",
         "bPermissions",
 
-        // Brain-dead chat signing bypass that break EssentialsChat
+        //chat signing bypass that can ptentially break EssentialsChat
         "NoChatReports",
         "NoEncryption"
     );
